@@ -1,0 +1,30 @@
+README for asioemu
+
+* Introduction
+The program has been written in order to copy Atari 8-bit disks to
+ATR images on a PC. For this purpose the software emulates the behavior
+of an Atari SIO disk drive.
+
+    ------------
+    |  ATARI   |           
+    | Computer |
+    ------------
+         |
+   --------------           --------------
+   |   ATARI    |           |  asioemu   |
+   | Disk drive |---------- | Disk drive | 
+   |     1      |           |     2      |
+   --------------           --------------
+
+On the Atari computer any standard copy software can be used.
+
+* SIO connection
+The Atari SIO port is connected to a PC UART. Because of different
+operation volatge (12V PC UART vs 5V Atari SIO), SIO and UART MUST NOT
+be connected without voltage level shifting. For details on how
+to connect, please check MAX232 and SIO2PC on the internet.
+
+asioemu needs the "data in" (SIO pin 3) and "data out" (SIO pin 5) 
+information only. The "command" (SIO pin 7) line is not required. This 
+approach should make  the software very flexible  regarding supported 
+hardware.
