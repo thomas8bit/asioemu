@@ -70,7 +70,7 @@ int Serial_Open(char *Name) {
 
     /* configure iflag options */
     options.c_iflag &= ~(BRKINT | PARMRK |  INPCK | ISTRIP
-                       | INLCR | IGNCR | ICRNL | IUCLC | IXON | IXANY
+                       | INLCR | IGNCR | ICRNL | IXON | IXANY
                        | IXOFF | IMAXBEL | IUTF8);
     options.c_iflag |= (IGNBRK | IGNPAR);
 
