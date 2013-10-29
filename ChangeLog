@@ -1,3 +1,6 @@
+2013-10-29 Thomas Bruss <brusst(at)web(dot)de>
+	* MacOS compilation issue fixed
+
 2013-10-27 Thomas Bruss <brusst(at)web(dot)de>
 	* Initial version with automake
 	
