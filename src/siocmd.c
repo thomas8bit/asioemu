@@ -28,6 +28,7 @@
 #include "main.h"
 #include "serial.h"
 #include "siocmd.h"
+#include "disk.h"
 
 /* Local defines */
 #define LOC_TIME_SECTOR_ACCESS    2 /* ms delay for feedback on sector access */

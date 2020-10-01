@@ -25,6 +25,7 @@
 #include <fcntl.h>              /* File control definitions */
 #include <termios.h>            /* POSIX terminal control definitions */
 #include <sys/ioctl.h>
+#include <unistd.h>
 
 /* Program include files */
 #include "serial.h"

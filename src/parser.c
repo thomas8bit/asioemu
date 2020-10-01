@@ -27,6 +27,7 @@
 #include "main.h"
 #include "parser.h"
 #include "siocmd.h"
+#include "serial.h"
 
 /* Local defines */
 #define LOC_STATE_IDLE            0    /* Waiting for command */
@@ -107,7 +108,7 @@ int Parser_Exec(int Atari, char Device, char *InBuf, int InSize) {
         case LOC_STATE_SIOCMD_RECEIVED:
             x = locVerifyChecksum();
             if (x == 0) {
-                Serial_Write(Atari, nack, 1);
+                Serial_Write(Atari, (char*)nack, 1);
                 return -1;
             }
             break;
