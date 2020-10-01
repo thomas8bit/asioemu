@@ -1,4 +1,7 @@
-asioemu NEWS - User visible changes. 2013-10-29
+asioemu NEWS - User visible changes. 2020-10-01
+
+version 0.3
+* Fixed compilation issues with latest Ubuntu 18.04 toolchain
 
 version 0.2
 * Fixed MacOS compilation issue
