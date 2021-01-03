@@ -145,7 +145,7 @@ static int locSioStatus(int Atari) {
 
 /* Get SIO speed */
 static int locSioGetSpeed(int Atari) {
-    static const char speed[] = {0x29};
+    static const char speed[] = {0x28};
     char checksum;
 
     locAck(Atari);
