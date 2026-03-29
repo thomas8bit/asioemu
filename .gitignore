@@ -1,0 +1,7 @@
+*.o
+*~
+.deps
+Makefile
+asioemu
+config.log
+config.status
